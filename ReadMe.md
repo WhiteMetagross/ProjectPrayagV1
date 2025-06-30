@@ -25,6 +25,6 @@ The core innovation lies in its **lane-constrained forecasting model**. Instead 
 
 The system generates up to three probable future paths, each visualized with a confidence level. To ensure stable and visually coherent predictions, the output undergoes **temporal smoothing**, which averages forecasts across several frames. This methodology produces realistic, context-aware predictions that adhere to road geometry, effectively handling curves, lane changes, and vehicle occlusions.
 
-![Vehicle Path Predictor Visualization](./visuals/TrajectoryPredictions.mp4)
+![Vehicle Path Predictor Visualization](./visuals/TrajectoryPredictions.gif)
 
 [**Explore the Code >**](./VehiclePathPredictorV1/) | [**Read the Full Documentation >**](./VehiclePathPredictorV1/ReadMe.md)
