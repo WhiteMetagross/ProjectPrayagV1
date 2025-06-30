@@ -11,9 +11,9 @@ The process begins with vehicle detection and tracking using **YOLO11-OBB** and 
 
 The final output is a `lanes.geojson` file containing the generated lane polylines, alongside a visualization video overlaying the derived lanes onto the source footage for verification.
 
-![RoadMapper Visualization](./assets/roadmapper_image.gif)
+![RoadMapper Visualization](./visuals/LaneVisualisation.png)
 
-[**Explore the Code >**](./RoadMapper/) | [**Read the Full Documentation >**](./RoadMapper/ReadMe.md)
+[**See the Code/**](./RoadMapper/) | [**Read the Full Documentation.**](./RoadMapper/ReadMe.md)
 
 ---
 
@@ -25,6 +25,6 @@ The core innovation lies in its **lane-constrained forecasting model**. Instead 
 
 The system generates up to three probable future paths, each visualized with a confidence level. To ensure stable and visually coherent predictions, the output undergoes **temporal smoothing**, which averages forecasts across several frames. This methodology produces realistic, context-aware predictions that adhere to road geometry, effectively handling curves, lane changes, and vehicle occlusions.
 
-![Vehicle Path Predictor Visualization](./assets/vehicle_predictor_image.gif)
+![Vehicle Path Predictor Visualization](./visuals/TrajectoryPredictions.mp4)
 
 [**Explore the Code >**](./VehiclePathPredictorV1/) | [**Read the Full Documentation >**](./VehiclePathPredictorV1/ReadMe.md)
