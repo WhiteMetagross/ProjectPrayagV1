@@ -3,11 +3,11 @@
 
 A complete system for automatically generating lane geometry maps from standard traffic video footage. RoadMapper transforms raw video into structured lane data through a robust multi-stage pipeline that infers road structure from collective vehicle movement patterns.
 
-The process begins with vehicle detection and tracking using **YOLO11-OBB** and the **BotSORT** algorithm, which captures the precise orientation and path of each vehicle. The system extracts these paths as raw trajectories, which are then refined through several key algorithms:
+The process begins with vehicle detection and tracking using **YOLO11-OBB** and the **BotSORT** algorithm with the VeriWild R50-Net ReID, which captures the precise orientation and path of each vehicle. The system extracts these paths as raw trajectories, which are then refined through several key algorithms:
 * **Filtering & Smoothing:** Trajectories are validated based on a minimum duration to eliminate noise and smoothed using a moving average to create clean, representative paths.
 * **Track Merging:** The **Hausdorff distance** algorithm identifies and consolidates trajectories from different vehicles that follow the same lane, creating a single, more accurate representation of the path.
 * **Endpoint Snapping:** To form continuous lanes, the system algorithmically connects the start and end points of separate but closely aligned trajectory segments.
-* **Simplification:** Finally, the resulting polylines are simplified to reduce point density while preserving the essential geometric shape of the lane.
+* **Simplification:** The resulting polylines are simplified to reduce point density while preserving the essential geometric shape of the lane.
 
 The final output is a `lanes.geojson` file containing the generated lane polylines, alongside a visualization video overlaying the derived lanes onto the source footage for verification.
 
