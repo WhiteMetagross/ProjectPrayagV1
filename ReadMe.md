@@ -13,7 +13,7 @@ The final output is a `lanes.geojson` file containing the generated lane polylin
 
 ![RoadMapper Visualization](./assets/roadmapper_image.gif)
 
-[**Explore the Code >**](./RoadMapper/) | [**Read the Full Documentation >**](./RoadMapper/ReadMe1.md)
+[**Explore the Code >**](./RoadMapper/) | [**Read the Full Documentation >**](./RoadMapper/ReadMe.md)
 
 ---
 
