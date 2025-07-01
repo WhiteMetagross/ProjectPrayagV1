@@ -13,7 +13,7 @@ The final output is a `lanes.geojson` file containing the generated lane polylin
 
 ![RoadMapper Visualization](./visuals/LaneVisualisation.png)
 
-[**See the Code/**](./RoadMapper/) | [**Read the Full Documentation.**](./RoadMapper/ReadMe.md)
+[**See the Code.**](./RoadMapper/) | [**Read the Documentation.**](./RoadMapper/ReadMe.md)
 
 ---
 
@@ -27,4 +27,4 @@ The system generates up to three probable future paths, each visualized with a c
 
 ![Vehicle Path Predictor Visualization](./visuals/TrajectoryPredictions.gif)
 
-[**Explore the Code >**](./VehiclePathPredictorV1/) | [**Read the Full Documentation >**](./VehiclePathPredictorV1/ReadMe.md)
+[**Explore the Code.**](./VehiclePathPredictorV1/) | [**Read the Documentation.**](./VehiclePathPredictorV1/ReadMe.md)
